@@ -1,0 +1,37 @@
+body {
+	background-image:url(/media/images/login/back.png);
+}
+
+#login_left {
+	min-height: 500px;
+	background-image:url(/media/images/login/notepad.png);
+	background-size: auto 500px;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+#login_right {
+	background-image:url(/media/images/login/right.png);
+	min-height: 500px;
+	background-repeat:no-repeat;
+	background-position: center 173px ;
+}
+nav {
+	background-color: transparent;
+	background-image:url(/media/images/Login/head.png);
+	height: 49px !important;
+    line-height: 48px !important;
+}
+
+/*css for navbar*/
+
+
+/*media querries */
+@media screen and (max-width: 993px) and (min-width: 900px) {
+   /*media querry for body part*/
+ #notedpad-dashed-box {
+ margin-left:35.333333333333% !important;
+ }
+
+
+
+}
