@@ -1,3 +1,23 @@
 body {
 	background-image: url(/media/images/login/back.png);
 }
+
+#form_div {
+	background-image:url(/media/images/login/black_book.png);
+	min-height: 500px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/*media querries for body elements */
+@media screen and (max-width: 992px) {
+
+#left_elements {
+	display:none;
+}
+
+
+
+
+
+}
