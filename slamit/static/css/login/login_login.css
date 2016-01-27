@@ -15,7 +15,13 @@ body {
 #left_elements {
 	display:none;
 }
-
+#form_div {
+	background-image:url(/media/images/login/black_book.png);
+	min-height: 1274px;
+	background-repeat:no-repeat;
+	background-position:0px 90px;
+	background-size:100%;
+}
 
 
 
