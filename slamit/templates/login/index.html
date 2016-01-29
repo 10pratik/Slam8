@@ -2,8 +2,10 @@
 	<html>
 		<head>
 			<title>Welcome to Slamit </title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 			<link rel="stylesheet" href="/static/css/login/login.css">
+
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		</head>
 		<body>
@@ -25,7 +27,7 @@
 			      </ul>
 			    </div>
 			  </nav>
-			  <div class= "col m12 l12 s12"> &nbsp; </div>
+			  
 			  <div class= "col m12 l12 s12"> &nbsp; </div>
 			  <div class="row">
 			  	<div class="offset-l1 col s12 m12 l5" id="login_left">
@@ -33,12 +35,108 @@
 		  			 	<div class= "col m12 l12 s12"> &nbsp; </div>
 	  				 	<div class= "col m12 l12 s12"> &nbsp; </div>
 	  				 	<div class= "col m12 l12 s12"> &nbsp; </div>
-	  				 	<div class= "col m12 l12 s12"> &nbsp; </div>
-			  			<div style= "border:2px dashed black; min-height:122px" id="notedpad-dashed-box" class="offset-m4 offset-l3 offset-s3 col s4 m2 l4">
+	  				 	<div style= "border:2px dashed black; min-height:122px" id="notedpad-dashed-box" class="offset-m2 offset-l3 offset-s2 col s4 m5 l4">
 
 			  			</div>
 
 			  		</div>
+			  		<form method = "POST">
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s10 m10 l9" >
+			  				<span class="swissfont">I am a noble bearer of the name : </span>
+
+			  			</div>
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			
+			  				<input id="first_name" placeholder="First Name" name="first_name" style="border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;margin-bottom:0px !important;" type="text" class="offset-s2 offset-m2 offset-l3 col s4 m4 l3 validate form_design">
+         					
+			  				<input id="last_name" placeholder="Last Name" name="last_name" style="border-bottom-left-radius: 0px !important;border-top-left-radius: 0px !important;margin-bottom:0px !important;" type="text" class="col s4 m4 l3 validate form_design">
+			  			
+			  			
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s10 m10 l9" >
+			  				<span class="swissfont">For keeping touch with me : </span>
+
+			  			</div>
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			
+			  				<input id="first_name" placeholder="Email" name="first_name" style="margin-bottom:0px"  type="email" class="offset-s2 offset-m2 offset-l3 col s8 m8 l6 validate form_design">
+         					
+			  			
+			  			
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s10 m10 l9" >
+			  				<span class="swissfont">Key to my treasured chronicles : </span>
+
+			  			</div>
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			
+			  				<input id="password" placeholder="Password" name="password" style="margin-bottom:0px"  type="password" class="offset-s2 offset-m2 offset-l3 col s8 m8 l6 validate form_design">
+         					
+			  			
+			  			
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s10 m10 l9" >
+			  				<span class="swissfont">Let me check it well one more time : </span>
+
+			  			</div>
+
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			
+			  				<input id="password_again" placeholder="Re-enter password" style="margin-bottom:0px" name="renter_password"  type="password" class="offset-s2 offset-m2 offset-l3 col s8 m8 l6 validate form_design">
+         					
+			  			
+			  			
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s10 m10 l9" >
+			  				<span class="swissfont">Gender : </span>
+
+			  			</div>
+
+
+			  		</div>
+			  		<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-s2 offset-m2 offset-l3 col s4 m4 l3">
+			  				<input name="gender"  type="radio" id="male" />
+  							<label for="male">Male</label>
+			  			</div>
+			  			<div class="col s4 m4 l3">
+			  				<input name="gender"  type="radio" id="female" />
+  							<label for="female">Female</label>
+			  			</div>
+			  	</div>
+			  	<div class="row" style="margin-bottom:0px !important">
+			  			<div class="offset-l1 offset-m1 col s10 m10 l9  center-align" >
+			  				<span id="valuable_memory" class="pristina">No more shall any valuable memories get fade. </span>
+
+			  			</div>
+
+
+			  		</div>
+			  		<div class="row">
+			  			<button type="submit" id="signup_submit" style="height:25px;border-radius:10px;" class="waves-effect btn offset-s4 offset-m2 offset-l4 col s4 m4 l3" >
+
+
+			  		</div>
+			  		<img id="seal" src="/media/images/login/seal.png">
+
+			  	</form>
 		  		
 			  	</div>
 			  	<div class=" offset-l2  col s12 m12 l4" id="login_right">
@@ -52,7 +150,9 @@
 			  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 			  <script type="text/javascript">
 			  $(".button-collapse").sideNav();
-
+			  $(document).ready(function() {
+   				 $('select').material_select();
+  				});
 			  </script>
 		</body>
 	</html>

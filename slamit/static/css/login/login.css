@@ -1,3 +1,40 @@
+/*declaring fon faces*/
+@font-face {
+    font-family: swissfont;
+    src: url(/static/fonts/swiss.ttf);
+}
+@font-face {
+    font-family: pristina;
+    src: url(/static/fonts/pristina.ttf);
+}
+#seal{
+	position: relative;
+    right: -319px !important;
+    bottom: 176px !important;
+    width: 18% !important;
+}
+#signup_submit {
+	margin-top: 0px;
+	margin-left: 37%;
+	background-color: #03455f !important;
+}
+
+.swissfont{
+	font-family:swissfont;
+
+}
+.pristina{
+	font-family: pristina;
+}
+#valuable_memory {
+	margin-left: 30px !important;
+}
+/*css for form elements*/
+.form_design {
+	height: 20px !important;
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+}
 body {
 	background-image:url(/media/images/login/back.png);
 }
@@ -21,17 +58,78 @@ nav {
 	height: 49px !important;
     line-height: 48px !important;
 }
+#notedpad-dashed-box{
+ 	margin-top:	50px;
+ }
+
 
 /*css for navbar*/
 
 
 /*media querries */
-@media screen and (max-width: 993px) and (min-width: 900px) {
+@media screen and (max-width: 993px) and (min-width: 451px) {
    /*media querry for body part*/
- #notedpad-dashed-box {
- margin-left:35.333333333333% !important;
+#seal{
+	position: relative;
+    right: -380px !important;
+    bottom: 176px !important;
+    width: 18% !important;
+}
+   #signup_submit {
+	margin-top: 10px;
+	margin-left: 34%;
+}
+   #valuable_memory {
+	margin-left: 50px !important;
+}
+ #notedpad-dashed-box{
+ 	margin-top:	35px;
  }
+ #login_left {
+	min-height: 832px;
+	background-image:url(/media/images/login/notepad.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-position: center 0px;
+}
+#login_right {
+	background-image:url(/media/images/login/right.png);
+	min-height: 756px;
+	background-repeat:no-repeat;
+	background-position: center 69px ;
+	background-size: 100%;
+}
 
 
+}
+@media screen and (max-width: 450px){
+	 
+#seal{
+	position: relative;
+    right: -241px !important;
+    bottom: 176px !important;
+    width: 18% !important;
+}
+	 #signup_submit {
+	margin-top: 10px;
+	margin-left: 33%;
+}
+
+#valuable_memory {
+	margin-left: 50px !important;
+}
+#login_left {
+	min-height: 500px;
+	background-position: center 0px;
+	
+}
+
+#login_right {
+	background-position: center 69px ;
+	min-height: 394px;
+}
+
+#notedpad-dashed-box{
+ 	margin-top:	0px;
 
 }
