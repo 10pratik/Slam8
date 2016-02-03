@@ -8,22 +8,52 @@ body {
 	background-repeat:no-repeat;
 	background-position:center;
 }
+.form_design {
+	height: 30px !important;
+    border: 1px solid white !important;
+    border-radius: 10px !important;
+    background: white !important;
+}
+#signup_submit {
+	padding-bottom: 34px !important;
+	background-color: #03455f !important;
+}
 
 /*media querries for body elements */
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 450px){
+
 
 #left_elements {
 	display:none;
 }
 #form_div {
 	background-image:url(/media/images/login/black_book.png);
-	min-height: 1274px;
+	min-height: 500px;
 	background-repeat:no-repeat;
-	background-position:0px 90px;
+	background-position:0px 0px;
 	background-size:100%;
 }
 
 
+
+
+}
+
+
+
+@media screen and (max-width: 993px) and (min-width: 451px) {
+
+#left_elements {
+	display:none;
+}
+#form_div {
+	background-image:url(/media/images/login/black_book.png);
+	min-height: 800px;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	background-size:100%;
+}
 
 
 }
