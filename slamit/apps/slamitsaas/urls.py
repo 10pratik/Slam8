@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import TemplateView
 from apps.slamitsaas import views 
 
 
@@ -7,5 +8,5 @@ urlpatterns = patterns('',
     # url(r'^$', 'slamit.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^', views.login, name='login_url'),
+    url(r'^dashboard/$', TemplateView.as_view(template_name='dashboard/dashboard.html')),
 )

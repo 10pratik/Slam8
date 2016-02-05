@@ -10,6 +10,7 @@ urlpatterns = patterns('',
 
     # url(r'^', include('apps.slamitsaas.urls')),
     url(r'^',include('apps.signup.urls')),
+    url(r'^',include('apps.slamitsaas.urls')),
 )
 if settings.DEBUG:
     from django.views.static import serve
