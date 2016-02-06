@@ -3,6 +3,7 @@ from apps.slamitsaas.models import GlobalUsers
 from django.contrib.auth.hashers import PBKDF2PasswordHasher
 import datetime 
 from django.http import HttpResponse
+from django.contrib.auth import authenticate, login
 
 
 # Create your views here.
@@ -22,4 +23,18 @@ def signup(request):
 
 	return render(request,'login/index.html')
 
+def login_user(request):
+    if request.POST:
+        username = request.POST['email']
+        password = request.POST['password']
+
+        user = authenticate(username=username, password=password)
+        print user.gus_username
+        if user is not None:
+			login(request, user)
+			return HttpResponse('The user is logged in')
+        else :
+        	return HttpResponse('not found')
+    
+		
 

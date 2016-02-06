@@ -11,7 +11,7 @@ class SlamitsBackend:
         try:
             # Try to find a user matching your username
             print 'inside authenticate'
-            user = GlobalUsers.objects.get(gus_username=username, gus_isused=0)
+            user = GlobalUsers.objects.get(gus_email=username, gus_isused=0)
 
             #  Check the password is the reverse of the username
             if check_password(password, user.gus_password):
@@ -42,6 +42,6 @@ class SlamitsBackend:
     # Required for your backend to work properly - unchanged in most scenarios
     def get_user(self, user_id):
         try:
-            return GlobalUsers.objects.get(gus_username=user_id)
+            return GlobalUsers.objects.get(gus_email=user_id)
         except GlobalUsers.DoesNotExist:
             return None

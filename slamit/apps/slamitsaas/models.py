@@ -5,6 +5,7 @@ class GlobalUsers(models.Model):
 
     gus_user_id = models.AutoField(primary_key=True)
     gus_username = models.CharField(max_length=20)
+    last_login = models.DateTimeField(db_column='gus_last_login', null=True)
     gus_email = models.CharField(max_length=100, blank=True, null=True)
     gus_age = models.IntegerField(null=True, blank= True)
     gus_address = models.CharField(max_length=100, blank=True)

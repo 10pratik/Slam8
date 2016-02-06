@@ -26,7 +26,8 @@
 
 
 					</div>
-					<form method="POST" action="">
+					<form method="POST" action="{% url 'auth_login' %}">
+						{% csrf_token %}
 					<div class="row">
 						
 						<input id="email" placeholder="Email" name="email" style="margin-bottom:0px"  type="email" class="offset-m2 offset-s2 offset-l3 col s9 m9 l7 validate form_design">
