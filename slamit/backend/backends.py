@@ -19,7 +19,7 @@ class SlamitsBackend:
                 return user
             else:
             #     # No? return None - triggers default login
-                print 'lta userid/password does not match'
+                print 'userid/password does not match'
                 raise GlobalUsers.DoesNotExist
                 # return None
         except GlobalUsers.DoesNotExist:
