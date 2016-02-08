@@ -1,0 +1,23 @@
+body {
+	background-image:url(/media/images/login/back.png);
+}
+#left_side_panel {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#gift_box {
+	margin-left: -100px;
+	width:100%;
+}
+#sticky_note {
+	margin-left: -100px;
+	width:100%;
+}
+
+.hover_scale {
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	transition: width 2s, height 2s, transform 2s;
+}
+.hover_scale:hover {
+	-webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1);
+}
