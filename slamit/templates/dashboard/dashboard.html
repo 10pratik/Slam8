@@ -7,6 +7,44 @@
 	 				<link rel= "stylesheet" href="/static/css/dashboard/dashboard.css">
  		</head>
  		<body>
+
+ 			<img data-activates="slide-out-left" class="button-collapse_left" id="clip_left" src="/media/images/dashboard/clip_door_left.png">
+ 			<img data-activates="slide-out-right" class="button-collapse_right" id="clip_right" src="/media/images/dashboard/clip_door.png">
+			
+			  <ul id="slide-out-left" class="side-nav">
+			    <div class="row">
+			    	<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+			    	<div class="offset-s2 col s12">
+			    		<img width="70%" src="/media/images/dashboard/photo_frame.png">
+			    	</div>
+			    	<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+			    	<div class="offset-s2 col s12">
+			    		<img width="80%" src="/media/images/dashboard/scroll.png">
+			    	</div>
+		    	</div>
+
+			  </ul>
+			   <ul id="slide-out-right" class="side-nav">
+			    <div class="row">
+			    	<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+			    	<div class="offset-s1 col s12">
+			    		<img width="90%" src="/media/images/dashboard/giftbox.png">
+			    	</div>
+			    	<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+ 					<div class="col s12"> &nbsp;&nbsp;&nbsp;</div>
+			    	<div class="offset-s3 col s12">
+			    		<img width="70%" src="/media/images/dashboard/sticky_notes.png">
+			    	</div>
+		    	</div>
+
+			  </ul>
  			<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
  			<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
  			
@@ -33,11 +71,11 @@
  						<div class="row">
  							<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
  							<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
- 							<div class="col s6 m1 l1">
- 							<a href="">	<img class="hover_scale" src="/media/images/dashboard/idea_book.png"> </a>
+ 							<div class="offset-s1 col s4 m1 l1">
+ 							<a href="#">	<img   class="hover_scale" src="/media/images/dashboard/idea_book.png"> </a>
 
  							</div>
- 							<div class="offset-m3 offset-l3 offset-s3 col s6 m1 l1 center-align">
+ 							<div class="offset-m3 offset-l3 offset-s1 col s5 m1 l1 center-align">
  								<a href=""><img class="hover_scale" src="/media/images/dashboard/art_music.png"> </a>
 
  							</div>
@@ -48,10 +86,10 @@
 
  						</div>
  						<div class="row">
- 							<div class="offset-m2 offset-l2 offset-s2 col s6 m1 l1 center-align">
+ 							<div class="offset-m2 offset-l2 offset-s1 col s4 m1 l1 center-align">
  							<a href="">	<img class="hover_scale" src="/media/images/dashboard/personal_book.png"> </a>
  							</div>
- 							<div class="offset-m3 offset-l3 offset-s2 col s6 m1 l1 center-align">
+ 							<div class="offset-m3 offset-l3 offset-s1 col s5 m1 l1 center-align">
  							<a href="">	<img class="hover_scale" src="/media/images/dashboard/www.png"> </a>
  							</div>
 
@@ -59,15 +97,15 @@
 							</div>
 						<div class="row">
  							
- 							<div class="col s6 m1 l1">
+ 							<div class="offset-s4 col s4 m1 l1">
  							<a href="">	<img class="hover_scale" src="/media/images/dashboard/love_book.png"> </a>
 
  							</div>
- 							<div class="offset-m3 offset-l3 offset-s3 col s6 m1 l1 center-align">
+ 							<div class="offset-m3 offset-l3 offset-s1 col s4 m1 l1 center-align">
  							<a href="">	<img class="hover_scale" src="/media/images/dashboard/face.png"> </a>
 
  							</div>
- 							<div class="offset-m3 offset-l3 offset-s3 col s6 m1 l1 center-align">
+ 							<div class="offset-m3 offset-l3 offset-s1 col s2 m1 l1 center-align">
  							<a href="">	<img class="hover_scale" src="/media/images/dashboard/food_health.png"> </a>
 
  							</div>
@@ -76,7 +114,7 @@
 
  				</div>
 
- 				<div class="col s12 m2 l2">
+ 				<div class="col s12 m2 l2" id="right_side_panel">
  					<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
  							<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
  							<div class="col s6 m12 l12"> &nbsp;&nbsp;&nbsp;</div>
@@ -121,7 +159,16 @@
 
 
  			</div>
+ 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+ 			<script type="text/javascript">
+ 				$(".button-collapse_left").sideNav();
+ 				$(".button-collapse_right").sideNav();
+ 			</script>
+ 			<script type="text/javascript" >
+ 				
 
+ 			</script>
 
 		</body>
 	</html>
