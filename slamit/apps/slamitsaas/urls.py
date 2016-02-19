@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^dashboard/$', TemplateView.as_view(template_name='dashboard/dashboard.html')),
+    url(r'^diary$', TemplateView.as_view(template_name='diary/diary.html'))
 )

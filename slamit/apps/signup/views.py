@@ -35,7 +35,7 @@ def login_user(request):
             print user
             if user is not None:
                 login(request, user)
-                return HttpResponse('The user is logged in')
+                return render(request,'dashboard/dashboard.html')
             else:
                 raise ObjectDoesNotExist
         except  ObjectDoesNotExist:

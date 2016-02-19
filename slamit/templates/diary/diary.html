@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	<html>
+	 	<head>
+	 			<title> Welcome to slam8 </title>
+	 				<meta name="viewport" content="width=device-width, initial-scale=1">
+	 				<link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	 				<link rel="stylesheet" href="/static/css/diary/diary.css">
+		</head>
+		<body>
+			<div class="row" id="book_row">
+				<div class="offset-m3 offset-l3	col s12 m8 l8">
+						<div class="flipbook-viewport">
+					 
+					    <div class="flipbook">
+					      <div class="hard" style="background-color:black"></div>
+					      <div class="hard" style="background-color:black"></div>
+					      <div style="background-image:url(/media/images/diary/diary_right.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary_right.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary_right.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary_right.png"></div>
+					      <div style="background-image:url(/media/images/diary/diary.png"></div>
+					      <div class="hard" style="background-color:black"></div>
+					      <div class="hard" style="background-color:black"></div>
+					    </div>
+					 
+					</div>
+					
+										
+				</div>
+			</div>
+			
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			<script type="text/javascript" src="/static/js/diary/turn.min.js"></script>
+			<script type="text/javascript">
+					  // Create the flipbook
+					  var width = $(window).width(); 
+					  var height = $(window).height(); 
+					  $('.flipbook').turn({
+
+					      // Width
+					      width: 800	,
+					      
+					      // Height
+					      height: 400,
+
+					      // Elevation
+					      elevation: 50,
+					      
+					      // Enable gradients
+					      gradients: true,
+					      
+					      // Auto center this flipbook
+					      autoCenter: true
+
+					  });
+
+
+
+
+</script>
+		</body>
+	<html>
