@@ -1,0 +1,73 @@
+body {
+	background-image:url(/media/images/login/back.png);
+	background-size: cover;
+}
+#left_side_panel {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#gift_box {
+	margin-left: -100px;
+	
+}
+#sticky_note {
+	margin-left: -100px;
+	
+}
+#clip_left {
+	display:none;
+	position: absolute;
+	top:100px;
+}
+#clip_right {
+	display:none;
+	position: absolute;
+	top:100px;
+	right:0px;
+}
+
+.hover_scale {
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	transition: width 2s, height 2s, transform 2s;
+}
+.hover_scale:hover {
+	-webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1);
+}
+#slide-out-left{
+	background: transparent;
+	background-image:url(/media/images/dashboard/sideflip_back.png) !important;
+}
+#slide-out-right{
+	background: transparent;
+	background-image:url(/media/images/dashboard/sideflip_back.png) !important;
+}
+
+@media screen and (max-width: 450px){
+
+#clip_left {
+	display:block;
+}
+#clip_right {
+	display:block;
+}
+#left_side_panel {
+	display: none;
+	}
+#right_side_panel {
+	display:none;
+}
+}
+@media screen and (max-width: 993px) and (min-width: 451px) {
+#clip_left {
+	display:block;
+}
+#clip_right {
+	display:block;
+}
+#left_side_panel {
+	display: none;
+	}
+#right_side_panel {
+	display:none;
+}
+}
