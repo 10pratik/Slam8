@@ -1,5 +1,6 @@
 body {
 	background-image:url(/media/images/login/back.png);
+	background-size: cover;
 }
 #left_side_panel {
 	background-color: rgba(0, 0, 0, 0.5);
