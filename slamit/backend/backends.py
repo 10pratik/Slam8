@@ -12,7 +12,9 @@ class SlamitsBackend:
             # Try to find a user matching your username
             print 'inside authenticate'
             user = GlobalUsers.objects.get(gus_email=username, gus_isused=0)
-
+            print ">>>>>>>>>>>>>>>"
+            print user.gus_email
+            print user.gus_password
             #  Check the password is the reverse of the username
             if check_password(password, user.gus_password):
             #     # Yes? return the Django user object
